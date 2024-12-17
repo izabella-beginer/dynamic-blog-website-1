@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View/Edit Post</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<h1>Upload your post</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+          <label for="profile_pic">Choose file to upload</label>
+          <input
+            type="file"
+            id="profile_pic"
+            name="profile_pic"
+            accept=".jpg, .jpeg, .png" />
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+
+<h2>View or Edit Your Post</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Delete upload</h1>
+      <p>Are you sure you want to delete your upload?</p>
+    
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+      </div>
+    </div>
+  </form>
+</div>
