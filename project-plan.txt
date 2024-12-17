@@ -1,0 +1,1 @@
+plan to create dynamic blog-website to upload and delete function

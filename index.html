@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where you can Blog Website</title>
+      <script defer src="script.js"></script> <!-- We’ll write the JavaScript here later -->
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Hello please  Enter Your Name</h1>
+
+  <form action="/action_page.php" method="get">
+  <fieldset name="personalia">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+  </fieldset>
+  <br>
+  <button type="button" onclick="form.personalia.style.backgroundColor='purple'">Change background color of fieldset</button>
+  <input type="submit">
+  </form>
+  
+
+  <form action="new-post.html" method="get">
+<br><br>
+<h2>View Existing Blog Posts:</h2>
+<p>Click on a subject to view posts you've written:</p>
+<ul>
+    <li><a href="post.html?subject=Nature">View Nature Post</a></li>
+    <a href="new-post.html">Submite Your post directly to Our Website</a>
+    
+</ul>
+    
+
+</body>
+</html>
